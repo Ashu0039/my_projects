@@ -3,6 +3,10 @@ It was great working and developing the project. I learnt very interesting thing
 Thank you for the opportunity.
 *************************
 
+*************************
+Please Run npm install to install the node_modules
+*************************
+
 I would like to mention few points:
 1) I have set mongoDB configured in connections.js with name "fizzApp". Please update it accordingly, and mention if any username or password is required.
 
