@@ -76,7 +76,8 @@ Once a user is created, its token is returned, please save it for future queries
 ** Sorry, I didn't implement this in client side.
 ** For queries using POSTman you need to supply token in the Authorization header for each query.
 
-The format for token is: Token<space><Token>. Please refer isAuthorized.js for further clarification.
+The format for token is: Token*space**Token*. Please refer isAuthorized.js for further clarification.
+eg. For a token is Token vs9890sdv80s9v0svs0vs
 
 So for every GET/POST query you need to supply Authorization header and the token in format mentioned as value.
 
