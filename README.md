@@ -35,11 +35,11 @@ module.exports.policies = {
 };
 
 Step 3) Now run the server and send a POST request to server with email, password and confirmPassword.
-
+<br />
 eg. localhost:1337/users/create?email=admin@example.com&password=12345&confirmPassword=12345
-
+<br />
 This will create a user with admin attribute to true.
-
+<br />
 ******
 Imp::::
 PLEASE SAVE THE TOKEN SENT BACK BY THE USER, IT WILL BE USED IN FURTHER QUERIES BY THIS USER
@@ -66,19 +66,20 @@ module.exports.policies = {
   } 
 };
 
-*** I know this is silly, but I couldn't find other way, maybe by setting Admin Variables in Env could have solved the problem but anyways.
-
+*** I know this is silly, but I couldn't find other way, maybe by setting Admin Variables in Env could have solved the problem but anyways.***
+<br />
 3) Token based authentication system.
 In order to implement token based authentication, I have used a service jwToken.js and policy isAuthorized.js to generate and check for tokens respectively.
-
+<br />
 Once a user is created, its token is returned, please save it for future queries. This token needs to saved automatically in client side. 
-
+<br />
 ** Sorry, I didn't implement this in client side.
+<br />
 ** For queries using POSTman you need to supply token in the Authorization header for each query.
-
-The format for token is: Token*space**Token*. Please refer isAuthorized.js for further clarification.
+<br />
+The format for token is: Token*space**Token*. Please refer isAuthorized.js for further clarification.<br />
 eg. For a token is Token vs9890sdv80s9v0svs0vs
-
+<br />
 So for every GET/POST query you need to supply Authorization header and the token in format mentioned as value.
 
 
