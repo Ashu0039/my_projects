@@ -1,6 +1,6 @@
 *************************
 It was great working and developing the project. I learnt very interesting things in past few days.
-Thank you for the opportunity.
+Thank you for the opportunity and the learning experience.
 *************************
 
 *************************
@@ -63,7 +63,7 @@ module.exports.policies = {
 
   'AuthController': {
     '*': true
-  } 
+  }
 };
 
 *** I know this is silly, but I couldn't find other way, maybe by setting Admin Variables in Env could have solved the problem but anyways.***
@@ -71,7 +71,7 @@ module.exports.policies = {
 3) Token based authentication system.
 In order to implement token based authentication, I have used a service jwToken.js and policy isAuthorized.js to generate and check for tokens respectively.
 <br />
-Once a user is created, its token is returned, please save it for future queries. This token needs to saved automatically in client side. 
+Once a user is created, its token is returned, please save it for future queries. This token needs to saved automatically in client side.
 <br />
 ** Sorry, I didn't implement this in client side.
 <br />
@@ -85,7 +85,7 @@ So for every GET/POST query you need to supply Authorization header and the toke
 
 4) An admin can only create new managers or employees.
 
-To create a manager, 
+To create a manager,
 
 --> Send POST request containing manager=true along with email, password, and confirmPassword.
 	e.g. localhost:1337/users/create?email=m@m.com&password=1234&confirmPassword=1234&manager=true
